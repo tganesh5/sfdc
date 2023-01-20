@@ -16,6 +16,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Number_of_trained_Partner_contacts__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.ParentId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -57,11 +62,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Partner_Total_Sales_Revenue__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Number_of_trained_Partner_contacts__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

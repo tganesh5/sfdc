@@ -12,12 +12,11 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Partner Management</label>
     <navType>Standard</navType>
-    <tabs>Partner_Management</tabs>
-    <tabs>Rate_Partner_Performance</tabs>
+    <tabs>Partner_Management1</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>Partner_Type__c</tabs>
-    <tabs>Partner_Performance_Review__c</tabs>
+    <tabs>standard-OrgMetric</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Partner_Management_UtilityBar</utilityBar>
 </CustomApplication>

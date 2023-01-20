@@ -14,4 +14,16 @@ public with sharing class partnerSearchController {
 
 
     }
+
+    @AuraEnabled(cacheable=true)
+    public static List<Account> getAllAccounts()
+    {
+        try{
+           return [select id,name from account];
+        }
+        catch(Exception ex)
+        {
+              throw new AuraHandledException(ex.getMessage());
+        }
+    }
 }
