@@ -16,7 +16,7 @@ describe('c-partner-card', () => {
         });
 
         // Act
-        document.body.appendChild(element);
+        //document.body.appendChild(element);
 
         // Assert
         // const div = element.shadowRoot.querySelector('div');
