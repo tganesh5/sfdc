@@ -1,4 +1,4 @@
-import { LightningElement, wire } from 'lwc';
+import { LightningElement, wire, api } from 'lwc';
 import getPartners from '@salesforce/apex/partnerSearchController.getPartners';
 
 
@@ -16,15 +16,13 @@ export default class PartnerSearchResult extends LightningElement {
 
   ChannelPartnersList;
 
-  partnerTypeId = ''; //= 'a065j000009ck5oAAA';
-
+  @api partnerTypeId = ''; // exposing public property so that it receives data from other components. In this case, selected parrtner Type Id from master containner component
   @wire(getPartners, { strPartnerTypeId: '$partnerTypeId' }) // param1: Name of the APEX method; param2: Inputs parameters to APEX method 
   processOutput({ data, error }) {
     if (data) {
-     console.log('Channel Partners::' + JSON.stringify(data));
+      console.log('Channel Partners::' + JSON.stringify(data));
       // assign the data coming from the DB
       this.ChannelPartnersList = data;
-      //console.log('### this.ChannelPartnersList : ' + ChannelPartnersList);
     }
     else if(error)
     {
